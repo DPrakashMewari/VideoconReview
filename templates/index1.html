@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Review</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+	<div>
+		<td>{% for table in tables %}</td>
+            
+            <td>{{ table|safe }}</td>
+		{% endfor %}
+	</div>
+    <h1>Wordcloud</h1>
+    <img src ="../static/wcd.jpg" alt = "cloud of words" width="50%" height="auto">
+    <h1>Frequency</h1>
+    <img src ="../static/freq.jpg"  width="50%" height="auto">
+    <p>OVERALL SENTIMENT CONCLUSION IS POSITIVE </p>
+    <p>TOP WORDS USED IN REVIEW : GOOD , SERVICE , REMOTE</p> 
+    <p>TOP BIGRAM WORD : Customer Care , Good Product</p>
+    <p>TOP TRIGRAM WORD : Good Picture Quality , Installment Quick Done 
+    </p>
+    <h1>Maximum word cluster from reviews</h1>
+    <img src ="../static/max.jpg"  width="50%" height="auto">
+    <h1>Minimum word cluster from reviews</h1>
+    <img src ="../static/min.jpg"  width="50%" height="auto">
+    <h1>AMAZON REVIEWS YEARLY PLOT</h1>
+    <img src ="../static/plt.jpg"  width="50%" height="auto">
+    <p>POSITIVE REVIEWS ARE MORE THAN NEGATIVE REVIEWS .  
+       2017 HAS HIGHEST TOTAL REVIEWS . 
+    </p>
+    <h1>NSE YEARLY TREND</h1>
+    <img src ="../static/Nse.jpg"  width="50%" height="auto">
+    <p>CONCLUSION : 
+       FROM NSE TREND REVIEWS AND TOTAL AMAZON REVIEW TRENDS SHOWS THERE IS DECLINE IN TRADE RESPONSE FROM 2017 TO 2020 TILL DATE WHICH IS PROPOTIONALLY REFLECTED WITH AMAZON REVIEW TREND
+    </p>
+   </body>
+</html>
